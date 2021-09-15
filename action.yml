@@ -1,0 +1,22 @@
+name: 'action-github-app-jwt-and-installation-token'
+description: 'Action using  Octokit to fetch a GitHub App JWT as well as the installation access token if installationId is given.'
+author: 'Felipe Baisi'
+inputs:
+  app_id:
+    required: true
+    description: 'Github App ID'
+  base64_pem_key:
+    required: true
+    description: 'Base64 encoded PEM key for the GitHub App -> $(cat path_to_your_pem.pem | base64)'
+  installation_id:
+    required: false
+    description: 'Instance or Installation ID - If not given it will look for the first item in the api.github.com/app/installations list'
+    default: ''
+outputs:
+  jwt_token:
+    description: 'Github App JWT Token'
+  installation_access_token:
+    description: 'Github App installation access token'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
