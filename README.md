@@ -49,7 +49,7 @@ The action will validate given installation id within the available installation
   - name: Checkout private repo
     uses: actions/checkout@v2
     with:
-      repository: febaisi/my-private-repo
+      repository: myuser/my-private-repo
       token: ${{ steps.my-app.outputs.jwt_token }}
 ```
 
