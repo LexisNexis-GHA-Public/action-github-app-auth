@@ -1,4 +1,4 @@
-name: 'action-github-app-jwt-and-installation-token'
+name: 'action-github-app-auth'
 description: 'Action using  Octokit to fetch a GitHub App JWT as well as the installation access token if installationId is given.'
 author: 'Felipe Baisi'
 inputs:

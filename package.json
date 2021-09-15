@@ -1,5 +1,5 @@
 {
-  "name": "action-github-app-jwt-and-installation-token",
+  "name": "action-github-app-auth",
   "version": "1.0.0",
   "description": "Gets a GitHub App JWT and Installation access token",
   "main": "lib/main.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LexisNexis-GHA-Public/action-github-app-jwt-and-installation-token"
+    "url": "https://github.com/LexisNexis-GHA-Public/action-github-app-auth"
   },
   "keywords": [
     "actions",
