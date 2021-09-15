@@ -1,6 +1,6 @@
 # action-github-app-jwt-and-installation-token
 
-This uses Octokit to fetch a GitHub App JWT as well as the installation access token if installationId is given.
+Action using Octokit to retrieve a GitHub App JWT as well as the installation access token if installation ID is given.
 
 ## Development
 
@@ -35,7 +35,8 @@ $ cat pem_file_path.pem | base64
 ## Usage
 Github App ID and encoded PEM File are always required.
 Provide an installation ID if seeking an installation access token.<br>
-The action will validate given installation id within the available installations for its Gihub App ID.
+The action will validate the given installation id within the available installations for its Github App ID.<br>
+If the installation ID is empty, the action will try to use the first available installation id within its Github App ID installations list. If not found, the action will only return the JWT Token.
 
 ## Sample1 - Checkout a different repo
 ```
