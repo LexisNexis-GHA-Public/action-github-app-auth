@@ -42,7 +42,7 @@ If the installation ID is empty, the action will try to use the first available 
 ```
   - name: my-app-install tokens
     id: my-app
-    uses: LexisNexis-GHA-Public/action-github-app-auth@1
+    uses: LexisNexis-GHA-Public/action-github-app-auth@v1
     with:
       app_id: ${{ secrets.APP_ID }}
       base64_pem_key: ${{ secrets.BASE64_PEM_KEY }}
@@ -58,7 +58,7 @@ If the installation ID is empty, the action will try to use the first available 
 ```
   - name: my-app-install tokens
     id: my-app
-    uses: LexisNexis-GHA-Public/action-github-app-auth@1
+    uses: LexisNexis-GHA-Public/action-github-app-auth@v1
     with:
       app_id: ${{ secrets.APP_ID }}
       base64_pem_key: ${{ secrets.BASE64_PEM_KEY }}
