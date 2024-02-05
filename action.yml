@@ -18,5 +18,5 @@ outputs:
   installation_access_token:
     description: 'Github App installation access token'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
